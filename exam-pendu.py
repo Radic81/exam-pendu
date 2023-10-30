@@ -6,7 +6,7 @@ def choisir_mot(niveau):
     niveaux = {
         "1": ["pomme", "table", "rivet", "livre", "roule","actif","agile","bacon"],
         "2": ["liquide", "cuisine", "matinee", "bananes", "nouveau"],
-        "3": ["television", "universite", "Champignon", "electrique", "conference"]
+        "3": ["television", "universite", "champignon", "electrique", "conference"]
     }
     return random.choice(niveaux[niveau])
  
