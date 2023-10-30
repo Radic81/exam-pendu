@@ -210,6 +210,6 @@ def pendu():
         time.sleep(1)
         print(light_white+("\n A la prochaine!")+reset)
         time.sleep(1)
-        print(purple+("\n(Pour plus d'infos sur les prochaines sorties de jeu, rejoignez-nous sur"+reset),(italic+underline+purple+"https://algo-fun.org)\n")+reset)
+        print(purple+("\n(Pour plus d'infos sur les prochaines sorties de jeu, rejoignez-nous sur"+reset),(italic+underline+purple+("https://www.technobel.be/fr/)\n")+reset)
        
 pendu()
