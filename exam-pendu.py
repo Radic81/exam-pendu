@@ -100,7 +100,6 @@ def pendu():
         lettres_erronees = set()
    
         while tentatives >= 0:
-            os.system('cls')
             print(light_green+("\nMot à deviner :")+reset, affichage)
             print(light_white+("\nTentatives restantes :")+reset, tentatives)
             print(light_red+("\nLettres incorrectes :")+reset, ", ".join(lettres_erronees))
@@ -170,8 +169,8 @@ def pendu():
  
             proposition = input(cyan+("\nProposez une lettre : ")+reset)[0:1].lower()
  
-            if not proposition.isalpha():
-                print(red+("Entrée invalide. Veuillez entrer une lettre svp")+reset)
+            if not proposition.isascii() or not proposition.islower() or len(proposition) != 1:
+                print(red+("Entrée invalide.")+reset)
                 continue
  
             if proposition in lettres_erronees:
