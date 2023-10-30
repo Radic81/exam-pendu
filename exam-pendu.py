@@ -194,6 +194,7 @@ def pendu():
             if "_" not in affichage:
                 print("\n>>> Gagné! <<<")
                 niveaux_reussis[niveau] += 1
+                print(f"\nle mot recherché était bien : {mot_solution}")
                 break
        
         rejouer = input(green+("\n Voulez-vous rejouer ? (o/n) : ")+reset)
